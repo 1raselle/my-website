@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: rgb(230, 173, 222);
+    }
+
+    h1 {
+      color: rgb(0, 0, 0);
+      text-align: center;
+    }
+
+    p {
+      font-family: verdana;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>hoiii besties thank you for looking at my website! love you all!!<b>
+      <3</b>
+  </p>
+  <h2>About Me</h2>
+  <p>I'm a web developer and I love creating beautiful websites!</p>
+</body>
+
+</html>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Check out this cool video!</a>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #b67fb1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #db9dc2;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #eb25986e;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #d2ffec;
+      border-top: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>buttonssssssssssssssssssssssssssssssssssssssssss</p>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'music')">Music</button>
+    <button class="tablinks" onclick="openCity(event, 'me')">Me</button>
+    <button class="tablinks" onclick="openCity(event, 'hobbies')">Hobbies</button>
+  </div>
+
+  <div id="music" class="tabcontent">
+    <h3>music</h3>
+    <p>heres some music for you! peonelope scott,rat,ciggertte ahegao,lotta true crime,sweet hibiscus tea,lukewarm,self care,bad advice,moonsickness,dumpster,lavnder,you sholud know,mommy frweind,warm regards</p>
+  </div>
+
+  <div id="me" class="tabcontent">
+    <h3>Me</h3>
+    <p><img src="images/frog.jpg" alt="this is what goes on in my mind 24/7" loading="lazy"><3(:</p>
+  </div>
+
+  <div id="hobbies" class="tabcontent">
+    <h3>Hobbies</h3>
+    <p>i make and sell kandi.</p>
+  </div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+</body>
+
+</html>
